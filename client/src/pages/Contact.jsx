@@ -216,12 +216,19 @@ const Contact = () => {
           </div>
           
           {/* Map Placeholder */}
-          <div className="mt-12 rounded-lg overflow-hidden shadow-md h-80 bg-gray-200 flex items-center justify-center">
-            <div className="text-center">
-              <h3 className="text-xl font-semibold mb-2">Our Location</h3>
-              <p className="text-gray-600">Map integration will be added here</p>
-            </div>
+          <div className="mt-12 rounded-lg overflow-hidden shadow-md h-80">
+            <iframe
+              title="Our Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27231.73480442081!2d74.31325522983917!3d31.46591260324117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906c8a396e9e9%3A0xa8b74b441b1c284e!2s852-B%20Milaad%20St%2C%20Block%20B%20Faisal%20Town%2C%20Lahore%2C%2054770!5e0!3m2!1sen!2s!4v1714822346719!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
+
         </div>
       </main>
       

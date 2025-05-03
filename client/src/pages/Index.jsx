@@ -43,7 +43,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1559302995-f1d7926f2063?q=80&w=600&auto=format&fit=crop" 
+                src="https://www.shutterstock.com/image-photo/handmade-spring-decor-concept-creative-600nw-2475128777.jpg" 
                 alt="Handmade Crochet Process" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -82,7 +82,7 @@ const Index = () => {
       
       {/* Custom Orders CTA */}
       <section className="section-padding" style={{ 
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(https://images.unsplash.com/photo-1604787294309-2d321e713c4e?q=80&w=1200&auto=format&fit=crop)',
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(https://bellacococrochet.com/cdn/shop/files/IMG_4591.jpg?v=1712838315&width=2048)',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}>
@@ -104,7 +104,7 @@ const Index = () => {
           <h2 className="brand-font text-3xl md:text-4xl text-brand-pink-dark mb-2">Follow Us</h2>
           <p className="text-gray-600 mb-2">@knotsnchains</p>
           <div className="flex justify-center space-x-4 mb-6">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+            <a href="https://www.instagram.com/knotsnchains/" target="_blank" rel="noopener noreferrer" 
                className="text-brand-pink-dark hover:text-brand-pink transition-colors">
               <div className="flex items-center">
                 <Instagram size={20} className="mr-1" />
@@ -122,17 +122,23 @@ const Index = () => {
         </div>
         
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-            <a key={item} href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-               className="overflow-hidden aspect-square">
+          {['1.jpg', '2.jpg', '3.jpg', '4.jpg'].map((img, index) => (
+            <a 
+              key={index}
+              href="https://www.instagram.com/knotsnchains/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="overflow-hidden aspect-square"
+            >
               <img 
-                src={`https://images.unsplash.com/photo-${1550250946 + item * 1000}?q=80&w=300&auto=format&fit=crop`}
-                alt="Instagram Feed"
+                src={`/images/${img}`}
+                alt="Instagram Post"
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
               />
             </a>
           ))}
         </div>
+
       </section>
       
       <Footer />

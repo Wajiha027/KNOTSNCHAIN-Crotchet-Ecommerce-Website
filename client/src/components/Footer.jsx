@@ -17,7 +17,7 @@ export const Footer = () => {
               Each piece is unique and made with attention to detail.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.instagram.com/knotsnchains/" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-600 hover:text-brand-pink-dark transition-colors">
                 <Instagram size={20} />
               </a>
