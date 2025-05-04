@@ -19,7 +19,6 @@ Welcome to **Knots N' Chains**, a beautifully crafted MERN stack web application
 **Frontend**  
 - React.js  
 - Tailwind CSS  
-- Framer Motion (for animations)
 
 **Backend**  
 - Node.js  
@@ -28,7 +27,7 @@ Welcome to **Knots N' Chains**, a beautifully crafted MERN stack web application
 
 **Others**  
 - Google Maps Embed  
-- Vite / Webpack (depending on setup)  
+- Vite 
 - Git & GitHub for version control  
 
 ---
